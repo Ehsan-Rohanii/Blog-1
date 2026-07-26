@@ -54,6 +54,7 @@ import {
 } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
 import { ColorModeContext } from '../../App';
+import Users from '../../Pages/Users';
 
 // استایل‌های سفارشی
 const StyledAppBar = styled(AppBar)(({ theme, scrolled }) => ({
@@ -265,7 +266,7 @@ export default function Navbar() {
   };
 
   const menuItems = [
-    { text: 'کامنت‌ها', icon: <Comment />, path: '/comments' },
+    { text: 'کاربران', icon:<Category />, path: '/users' },
     { text: 'دسته‌بندی‌ها', icon: <Category />, path: '/categories' },
     { text: 'پست‌ها', icon: <Article />, path: '/posts' },
     { text: 'خانه', icon: <Home />, path: '/home' },
