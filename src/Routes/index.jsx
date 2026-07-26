@@ -6,6 +6,7 @@ import PostDetails from "../Pages/Home/PostDetails";
 import CreatePost from "../Pages/Home/CreatePost";
 import UpdatePost from "../Pages/Home/UpdatePost";
 import Categories from "../Pages/Home/Categories";
+import Users from "../Pages/Users";
 
 
 const router = createBrowserRouter([
@@ -34,8 +35,12 @@ const router = createBrowserRouter([
         element:<UpdatePost/>
     },
     {
-        path:"categories" ,
+        path:"/categories" ,
         element:<Categories/>
+    },
+    {
+        path:"users" ,
+        element:<Users/>
     }
 ])
 export default router ;

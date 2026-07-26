@@ -259,7 +259,7 @@ export default function PostDetails() {
     try {
       const token = localStorage.getItem("token");
       
-      const res = await fetch(`http://localhost:5000/api/comments/reply/${id}`, {
+      const res = await fetch(`http://localhost:5000/api/comments/reply/${commentId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -679,7 +679,7 @@ export default function PostDetails() {
                           </Avatar>
                           <Box>
                             <Typography variant="subtitle2" fontWeight="bold" fontSize="0.85rem">
-                              {reply.userId?.username || 'کاربر ناشناس'}
+                              {reply?.userId?.username || 'کاربر ناشناس'}
                             </Typography>
                             <Typography variant="caption" color="text.secondary" fontSize="0.7rem">
                               {new Date(reply.createdAt).toLocaleDateString('fa-IR')}
