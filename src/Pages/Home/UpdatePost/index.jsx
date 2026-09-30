@@ -467,7 +467,7 @@ export default function UpdatePost() {
               تصاویر
             </Typography>
             
-            <Stack direction="row" spacing={1} sx={{ mb: 1 }}>
+            <Stack direction="row" spacing={1} sx={{ mb: 1 , gap:1 }}>
               <StyledInputWrapper sx={{ mb: 0, flex: 1 }}>
                 <div className="input-container">
                   <input
@@ -483,8 +483,9 @@ export default function UpdatePost() {
                 variant="contained"
                 onClick={handleAddImage}
                 disabled={loading || !imageInput.trim()}
-                startIcon={<AddIcon />}
+                endIcon={<AddIcon />}
                 sx={{
+                  gap:1,
                   borderRadius: 2,
                   textTransform: 'none',
                   minWidth: '100px',
