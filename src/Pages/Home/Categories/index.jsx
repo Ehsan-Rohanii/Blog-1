@@ -505,7 +505,7 @@ export default function Categories() {
                     setCategoryTitle(e.target.value);
                     setFieldError(false);
                   }}
-                  placeholder="مثال: برنامه‌نویسی"
+                  placeholder="مثال : برنامه‌نویسی"
                   required
                   disabled={submitting}
                   minLength={3}
@@ -523,7 +523,7 @@ export default function Categories() {
                   type="text"
                   value={categoryIcon}
                   onChange={(e) => setCategoryIcon(e.target.value)}
-                  placeholder="مثال: 🚀 یا 💻"
+                  placeholder="مثال : برنامه نویسی"
                   disabled={submitting}
                 />
               </div>
