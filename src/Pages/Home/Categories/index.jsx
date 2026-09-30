@@ -381,9 +381,10 @@ export default function Categories() {
         
         <Button
           variant="contained"
-          startIcon={<AddIcon />}
+          endIcon={<AddIcon />}
           onClick={handleOpenCreateDialog}
           sx={{
+            gap:1,
             borderRadius: 3,
             textTransform: 'none',
             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
