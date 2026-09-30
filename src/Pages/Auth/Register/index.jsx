@@ -253,7 +253,7 @@ export default function Register() {
         throw new Error(data.message || "خطا در ثبت‌نام");
       }
 
-      navigate("/login");
+      navigate("/home");
     } catch (err) {
       setError(err.message);
       console.log("Error : ", err);
