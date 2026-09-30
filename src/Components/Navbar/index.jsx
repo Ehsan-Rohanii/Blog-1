@@ -335,7 +335,7 @@ export default function Navbar() {
               },
             }}
           >
-            <ListItemIcon>{item.icon}</ListItemIcon>
+            {/* <ListItemIcon>{item.icon}</ListItemIcon> */}
             <ListItemText 
               primary={item.text} 
               sx={{
@@ -386,12 +386,12 @@ export default function Navbar() {
                   },
                 }}
               >
-                <ListItemIcon sx={{ 
+                {/* <ListItemIcon sx={{ 
                   color: isActivePath(item.path) ? '#667eea' : 'inherit',
                   minWidth: 40,
                 }}>
                   {item.icon}
-                </ListItemIcon>
+                </ListItemIcon> */}
                 <ListItemText 
                   primary={item.text}
                   sx={{
@@ -426,7 +426,7 @@ export default function Navbar() {
                   },
                 }}
               >
-                <ListItemIcon sx={{ minWidth: 40 }}>{item.icon}</ListItemIcon>
+                {/* <ListItemIcon sx={{ minWidth: 40 }}>{item.icon}</ListItemIcon> */}
                 <ListItemText primary={item.text} />
               </ListItem>
             ))}
@@ -634,7 +634,7 @@ export default function Navbar() {
                 <NavButton
                   key={item.text}
                   onClick={() => handleNavigate(item.path)}
-                  startIcon={item.icon}
+                  // startIcon={item.icon}
                   active={isActivePath(item.path) ? 1 : 0}
                 >
                   {item.text}
